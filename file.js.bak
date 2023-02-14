@@ -1,0 +1,29 @@
+function afficheTable(tab)
+{
+    for( let i=0; i< tab.length; i++)
+       console.log("\n")
+       for( let j=0; j< tab[i].length; j++)
+          {console.log(" " + tab[i][j] + " ")}
+}
+
+function createTables()
+{
+	let tab=[]
+	do {
+	let size= prompt(" insert longeur de nouveau table :");
+	s=parseInt(size);
+	for(let i = 0 ; i < parseInt(size) ; i++ )
+	   { 
+		   num=prompt(" insert item  " + i + " : ");
+		   tab[i]=parseInt(num);
+	   }
+	tab.push();
+	} while ( parseInt(s) != 0);
+	   
+	console.log("thanks");
+    return tab
+}
+
+
+let tab=createTables()
+afficheTable(tab)
